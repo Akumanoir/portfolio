@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Reis | Front End Developer</title>
+
+    <link rel="stylesheet" href="styles/main-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onresize="changesize()">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="nav" id="00">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav" id="01">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#" class="nav" id="02">Projetos pessoais</a>
+                </li>
+                <!-- 
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home_page">
+            <article>
+                <div id="home_title">
+                    <h1>Cristiano Reis</h1>
+                    <h2>Front end developer | Júnior</h2>
+                
+                    <p>
+                        Olá! Sou um desenvolvedor front-end junior. Minha missão é trazer design e funcionalidade harmoniosos para a web.
+                    </p>
+                    <p>
+                        Sou um desenvolvedor front-end junior altamente motivado e apaixonado por criar interfaces web envolventes. Possuo conhecimentos em HTML e CSS, e estou aprimorando minhas habilidades em JavaScript. Busco oportunidade para aplicar e aprimorar minhas habilidades em um ambiente de trabalho colaborativo. Comprometido em aprender continuamente e acompanhar as melhores práticas e tendências do setor. Comunicativo e pronto para contribuir para o sucesso de projetos desafiadores.
+                    </p>
+                </div>
+                <div id="projects">
+                    <h1>
+                        Projetos Pessoais
+                    </h1>
+                    <div id="buttons_container">
+                        <div class="button">
+                             <div class="img_container google">
+                                <img src="images/google-template.png" alt="">
+                            </div>
+                            <div class="page-title">
+                                <strong>Google</strong>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="img_container monster_hunter">
+                               <img src="images/mhw-vanilla-bg-mobile.jpg" alt="">
+                           </div>
+                           <div class="page-title">
+                               <strong>Hunter's note</strong>
+                           </div>
+                        </div>
+                       <div class="button">
+                            <div class="img_container">
+                                <img src="images/login-template.png" alt="">
+                            </div>
+                            <div class="page-title">
+                                <strong>Tela de login/cadastro</strong>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="img_container">
+                                <img src="images/cordel-template.jpg" alt="">
+                            </div>
+                            <div class="page-title">
+                                <strong>Projeto Cordel</strong>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="img_container android">
+                                <img src="images/android-template.png" alt="">
+                            </div>
+                            <div class="page-title" id="06">
+                                <strong>Projeto Android</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_media">
+                    <a href="mailto:cristianoreisjr@outlook.com?subject=E-mail para Cristiano"><img src="images/outlook-logo.png" alt="Email"></a>
+                    <a href="https://github.com/Akumanoir" target="_blank" rel="external"><img src="images/gitgub-logo.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/cristiano-reis-6228b4215/" target="_blank" rel="external"><img src="images/linkedin-logo.png" alt="Linkedin"></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Projects modals -->
+    <div class="modal_container">
+        <div class="modal">
+            <div class="left_content google-modal">
+                <img src="images/google_page.png" alt="">
+            </div>
+            <div class="right_content">
+                <div class="text_container">
+                    <div class="title">
+                        <h3>Google</h3>
+                        <button class="close">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <p>
+                        Um exercício para ver como meu CSS desenvolveu desde quando eu comecei a estudar.
+                    </p>    
+                </div>
+                <div class="see_more">
+                    <a href="https://akumanoir.github.io/google/" target="_blank" rel="external">Ver mais
+                        <span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_container">
+        <div class="modal">
+            <div class="left_content monster-modal">
+                <img src="images/hunter-note-page.png" alt="">
+            </div>
+            <div class="right_content">
+                <div class="text_container">
+                    <div class="title">
+                        <h3>Hunter's Note</h3>
+                        <button class="close">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <p>
+                        Um site que contém informações dos monstros do jogo Monster Hunter World: Iceborne. Os modais com as informações dos monstros ainda estão em desenvolvimento.
+                    </p>    
+                </div>
+                <div class="see_more">
+                    <a href="https://akumanoir.github.io/hunters-note/" target="_blank" rel="external">Ver mais
+                        <span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_container">
+        <div class="modal">
+            <div class="left_content login-modal">
+                <img src="images/tela-de-login.png" alt="">
+            </div>
+            <div class="right_content">
+                <div class="text_container">
+                    <div class="title">
+                        <h3>Tela de login/cadastro</h3>
+                        <button class="close">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <p>
+                        Tela de login que faz uma transição com javascript e css para a tela de cadastro.
+                    </p>    
+                </div>
+                <div class="see_more">
+                    <a href="https://akumanoir.github.io/Create-account-screen/" target="_blank" rel="external">Ver mais
+                        <span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_container">
+        <div class="modal">
+            <div class="left_content cordel-modal">
+                <img src="images/projeto-cordel-tela.png" alt="">
+            </div>
+            <div class="right_content">
+                <div class="text_container">
+                    <div class="title">
+                        <h3>Projeto Cordel</h3>
+                        <button class="close">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <p>
+                        Projeto do curso de HTML e CSS do canal curso em vídeo.
+                    </p>    
+                </div>
+                <div class="see_more">
+                    <a href="https://akumanoir.github.io/projeto-cordel/" target="_blank" rel="external">Ver mais
+                        <span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_container">
+        <div class="modal">
+            <div class="left_content android-modal">
+                <img src="images/projeto-cordel-tela.png" alt="">
+            </div>
+            <div class="right_content">
+                <div class="text_container">
+                    <div class="title">
+                        <h3>Projeto Android</h3>
+                        <button class="close">
+                            <span class="material-symbols-outlined">
+                                close
+                            </span>
+                        </button>
+                    </div>
+                    <p>
+                        Projeto do curso de HTML e CSS do canal curso em vídeo.
+                    </p>    
+                </div>
+                <div class="see_more">
+                    <a href="https://akumanoir.github.io/projeto-android/" target="_blank" rel="external">Ver mais
+                        <span class="material-symbols-outlined">
+                        arrow_forward
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
