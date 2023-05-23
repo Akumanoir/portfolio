@@ -11,15 +11,14 @@ Desktop: 992px até 1200px
 TV: acima de 1200px
 */
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     *{
         transition: opacity .5s ease;
+        -webkit-tap-highlight-color: transparent;
     }
 
     body {
         min-width: 300px;
-        min-height: 100vh;
-        box-sizing: border-box;
     }
 
 /*---------------------Nav-----------*/
@@ -32,6 +31,7 @@ TV: acima de 1200px
         cursor: pointer;
         display: block;
         font-size: 2em;
+        margin-right: 20px;
     }
 
     nav {
@@ -99,6 +99,18 @@ TV: acima de 1200px
         display: none;
     }
 
+    #home_title, #projects {
+        border: none;
+    }
+
+    section article p {
+        border-left: 2px solid rgba(0, 0, 0, 0.158);
+        margin: 0px;
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
     .button {
         display: block;
         width: 60%;
@@ -152,6 +164,7 @@ TV: acima de 1200px
     footer {
         display: block;
         position: sticky;
+        border-top: 2px solid rgba(0, 0, 0, 0.158);
         top: 100%;
         width: 100%;
         padding: 10px;
@@ -159,5 +172,6 @@ TV: acima de 1200px
 
     .social_footer {
         display: flex;
+        justify-content: space-around;
     }
 }
