@@ -103,6 +103,10 @@ TV: acima de 1200px
         border: none;
     }
 
+    section article {
+        padding: 15px;
+    }
+
     section article p {
         border-left: 2px solid rgba(0, 0, 0, 0.158);
         margin: 0px;
@@ -110,6 +114,8 @@ TV: acima de 1200px
         font-size: 1.2em;
         text-align: left;
     }
+
+    /*Projects-----------*/
 
     .button {
         display: block;
@@ -228,5 +234,15 @@ TV: acima de 1200px
         display: flex;
         justify-content: center;
         margin-right: 30px;
+    }
+
+    .see_more a{
+        justify-content: flex-start;
+    }
+
+    .see_more a:hover{
+        width: 120px;
+        justify-content: flex-start;
+        box-shadow: none;
     }
 }
