@@ -335,6 +335,10 @@ footer {
     transition: box-shadow .2s ease-out;
 }
 
+.modal_close button.close {
+    display: none;
+}
+
 .close:hover {
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.233);
 }
