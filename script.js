@@ -1,71 +1,72 @@
-let buttons = {home: document.getElementById('00'), aboutMe: document.getElementById('01'), projects: document.getElementById('02')}
-let paraCont = document.getElementsByTagName('p') [0]
-let paraCont02 = document.getElementsByTagName('p') [1]
+let buttons = [...document.querySelectorAll('.nav')]
+let para_container = [...document.querySelectorAll('p.paragraph')]
 let section = {homeTitle: document.getElementById('home_title'), projects: document.getElementById('projects')}
-
-buttons.home.addEventListener('click', homeBnt)
-buttons.aboutMe.addEventListener('click', aboutBnt)
-buttons.projects.addEventListener('click', projectsBnt)
-
-window.onload = function() {
-    paraCont.classList.add('show')
-    section.projects.classList.add('section_deactive')
-    if(window.innerWidth <= 912) {
-        homeTitle.style.height = '180px'
-    }
-}
-
-function changesize() {
-    if(paraCont02.classList.contains('show')) {
-        if(window.innerWidth <= 912) {
-            homeTitle.style.height = '330px'
-        } else {
-            homeTitle.style.height = '230px'
-        }
-    }   
-}
-
-function homeBnt() {
-    if(section.homeTitle.classList.contains('section_deactive')){
-        section.homeTitle.classList.remove('section_deactive')
-        section.projects.classList.add('section_deactive')
-    }
-    paraCont.style.textIndent = ''
-    if(paraCont02.classList.contains('show') || section.projects.classList.contains('section_deactive')) {
-        paraCont.classList.add('show')
-        paraCont02.classList.remove('show')
-    }
-}
-
-function aboutBnt() {
-    if(section.homeTitle.classList.contains('section_deactive')){
-        section.homeTitle.classList.remove('section_deactive')
-        section.projects.classList.add('section_deactive')   
-    }
-    paraCont02.style.textIndent = '5%'
-    if(paraCont.classList.contains('show') || section.projects.classList.contains('section_deactive')) {
-        paraCont02.classList.add('show')
-        paraCont.classList.remove('show')
-        if(window.innerWidth <= 912) {
-            homeTitle.style.height = '330px'
-        }
-    }   
-}
-
-function projectsBnt() {
-    if(paraCont.classList.contains('show') || paraCont02.classList.contains('show')){
-        paraCont.classList.remove('show')
-        paraCont02.classList.remove('show')
-    }
-    if(section.projects.classList.contains('section_deactive')) {
-        section.projects.classList.remove('section_deactive')
-        section.homeTitle.classList.add('section_deactive')
-    }
-}
-
 let modal = [...document.querySelectorAll('.button')]
 let modal_cont = [...document.querySelectorAll('.modal_container')]
 let close = [...document.querySelectorAll('.close')]
+let show = {nav: document.getElementsByTagName('nav')[0], main: document.getElementsByTagName('main')[0], footer: document.getElementsByTagName('footer')[0]}
+
+
+window.onload = function() {
+    para_container[0].classList.add('show')
+    section.projects.classList.add('section_deactive')
+    /*if(window.innerWidth <= 912) {
+        section.homeTitle.style.height = '180px'
+    }*/
+}
+/*
+function changesize() {
+    if(para_container.classList.contains('show')) {
+        if(window.innerWidth <= 912) {
+            section.homeTitle.style.height = '330px'
+        } else {
+            section.homeTitle.style.height = '230px'
+        }
+    }   
+}
+*/
+function menu() {
+    show.nav.classList.add('nav_activate')
+    show.main.classList.add('main_dactivate')
+    show.footer.classList.add('main_dactivate')
+}
+
+function close_menu() {
+    show.nav.classList.remove('nav_activate')
+    show.main.classList.remove('main_dactivate')
+    show.footer.classList.remove('main_dactivate')
+}
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', (e) => {
+        let item = buttons[i]
+
+        switch (item) {
+            case buttons[0] : 
+                para_container[0].classList.add('show')
+                para_container[1].classList.remove('show')
+                section.projects.classList.add('section_deactive')
+                section.homeTitle.classList.remove('section_deactive');
+            break;
+            case buttons[1] : 
+                para_container[1].classList.add('show')
+                para_container[0].classList.remove('show')
+                section.projects.classList.add('section_deactive')
+                section.homeTitle.classList.remove('section_deactive');
+            break;
+            case buttons[2] : 
+                para_container[0, 1].classList.remove('show')
+                section.projects.classList.remove('section_deactive')
+                section.homeTitle.classList.add('section_deactive');
+            break;
+        }
+        if (show.nav.classList.contains('nav_activate')) {
+            show.nav.classList.remove('nav_activate')
+            show.main.classList.remove('main_dactivate')
+            show.footer.classList.remove('main_dactivate')
+        }
+    })
+}
 
 for (i = 0; i < close.length; i++) {
     close[i].addEventListener('click', (e) => {

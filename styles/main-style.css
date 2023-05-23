@@ -15,7 +15,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     min-height: 400px;
-    min-width: 500px;
+    
 }
 
 /*header------------------------------------------*/
@@ -34,6 +34,14 @@ header {
 nav{
     /*background-color: blue;*/
     margin-right: 15px;
+}
+
+.close_container {
+    display: none;
+}
+
+span.menu {
+    display: none;
 }
 
 ul {
@@ -114,16 +122,21 @@ section article p {
     opacity: 0;
     position: absolute;
     pointer-events: none;
+    text-align: justify;
     transition: opacity .5s ease-out;
     /**/
 }
 
-article a {
+.social_media a {
     padding: 5px;
 }
 
-article a img{
+.social_media a img{
     width: 35px;
+}
+
+footer {
+    display: none;
 }
 
 /*projetos------------------------*/
