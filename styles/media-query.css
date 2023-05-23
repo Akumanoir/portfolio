@@ -207,8 +207,12 @@ TV: acima de 1200px
         background-position: center center;
     }
 
+    .login-modal {
+        background-position: left center;
+    }
+
     .login-modal:hover{
-        background-position: right center;
+        background-position: left center;
     }
 
     .cordel-modal:hover {

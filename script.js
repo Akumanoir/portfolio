@@ -6,23 +6,13 @@ let modal_cont = [...document.querySelectorAll('.modal_container')]
 let close = [...document.querySelectorAll('.close')]
 let show = {nav: document.getElementsByTagName('nav')[0], main: document.getElementsByTagName('main')[0], footer: document.getElementsByTagName('footer')[0]}
 
-
+/*
 window.onload = function() {
     para_container[0].classList.add('show')
     section.projects.classList.add('section_deactive')
-    /*if(window.innerWidth <= 912) {
+    if(window.innerWidth <= 912) {
         section.homeTitle.style.height = '180px'
-    }*/
-}
-/*
-function changesize() {
-    if(para_container.classList.contains('show')) {
-        if(window.innerWidth <= 912) {
-            section.homeTitle.style.height = '330px'
-        } else {
-            section.homeTitle.style.height = '230px'
-        }
-    }   
+    }
 }
 */
 function menu() {
@@ -99,6 +89,3 @@ for (let i = 0; i < modal.length; i++) {
         }
     })
 }
-
-
-
