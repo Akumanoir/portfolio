@@ -239,11 +239,15 @@ TV: acima de 1200px
         justify-content: center;
         margin-right: 30px;
     }
+/*
+    
+ */
+}
 
+@media (hover: none) and (pointer: coarse) {
     .see_more a{
         justify-content: flex-start;
     }
-
     .see_more a:hover{
         width: 120px;
         justify-content: flex-start;
