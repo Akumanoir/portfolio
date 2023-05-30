@@ -7,6 +7,7 @@ let close = [...document.querySelectorAll('.close')]
 let show = {nav: document.getElementsByTagName('nav')[0], main: document.getElementsByTagName('main')[0], footer: document.getElementsByTagName('footer')[0]}
 
 function menu() {
+    show.nav.style.display = 'block'
     show.nav.classList.add('nav_activate')
     show.main.classList.add('main_dactivate')
     show.footer.classList.add('main_dactivate')
