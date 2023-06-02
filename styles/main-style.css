@@ -27,7 +27,7 @@ html, body {
     min-height: 560px;
 }
 
-/*header------------------------------------------*/
+/*--------------------header----------------------*/
 
 header {
     display: flex;
@@ -364,6 +364,11 @@ footer {
 /*----------------Estilo celular----------------*/
 
 @media screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    
     *{
         transition: opacity .5s ease;
     }
